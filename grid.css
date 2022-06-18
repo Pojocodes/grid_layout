@@ -2,8 +2,8 @@ body {
     background-color: rgba(3, 25, 36, 0.74);
 }
 .container {
-    width: 500px;
-    margin: 30px auto;
+    width: 30%;
+    margin: auto auto;
     background: rgba(15, 4, 41, 0.767);
     display: grid;
     grid-template-areas: "a a a a b b" "c c c d d d";
@@ -42,4 +42,16 @@ body {
 }
 .child {
     background-color: lightblue;
+}
+
+@media (max-width:400px) {
+    .container {
+        width: 90%;
+        padding: 2rem 1rem;
+    }
+
+    body {
+        padding: .1rem;
+    }
+    
 }
